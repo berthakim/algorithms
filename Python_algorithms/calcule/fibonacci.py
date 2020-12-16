@@ -14,8 +14,8 @@ def fib(n):
 	return m[n]
 
 
-number = int(input("Input: "))
-print(f'{number}th fibonacci number is: {fib(number)}')
+# number = int(input("Input: "))
+# print(f'{number}th fibonacci number is: {fib(number)}')
 
 
 # Dynamic programming
@@ -42,3 +42,7 @@ def fib_sequence(n):
 		yield f0
 		f0, f1 = f1, f0 + f1
 
+number = int(input("Input: "))
+fib_sequence = fib_sequence(number)
+for i in fib_sequence:
+	print(i, end=' ')
