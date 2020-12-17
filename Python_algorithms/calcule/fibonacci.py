@@ -46,3 +46,7 @@ number = int(input("Input: "))
 fib_sequence = fib_sequence(number)
 for i in fib_sequence:
 	print(i, end=' ')
+
+
+# there'is another one implementation of fibonacci algorithm - using matrix
+# This is the fastest realisation of fibo calcul, its take less memory as well
